@@ -1,8 +1,13 @@
+package com.fc.test;
+
 import java.util.Scanner;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-public class Main {
+/**
+ * @author yoon
+ * @since  2023-12-03
+ * @deprecated 애너그램 구현하기 : 문자열
+ */
+public class BJ_1919 {
     public static int[] getAlphbetCount(String str){
         int[] count = new int[26];
         for(int i = 0; i < str.length(); i++){
@@ -15,7 +20,7 @@ public class Main {
 
         String a = sc.next();
         String b = sc.next();
-                                                                    //a, b , c , d
+        //a, b , c , d
 //        int[] countA = new int[26]; //알파벳 소문자갯수 26 ex) dared = [1],[0],[0],[2]...
 //        int[] countB = new int[26];
         int[] countA = getAlphbetCount(a); //알파벳 소문자갯수 26 ex) dared = [1],[0],[0],[2]...
