@@ -1,6 +1,15 @@
+package com.fc.test;
+
+
 import java.util.Scanner;
 
-public class Main {
+/**
+ * @author yoon
+ * @since  2023-12-03
+ * @deprecated  백준 단어공부 : 문자열
+ *
+ */
+public class BJ_1157 {
     public static int [] getAlphabetCount(String str){
         int[] count= new int[26];
         for (int i = 0; i < str.length(); i++) {
@@ -14,7 +23,7 @@ public class Main {
         return count;
     }
     public static void main(String[] args) {
-       
+
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
 
@@ -26,7 +35,7 @@ public class Main {
             if (count[i] > maxCount){
                 maxCount = count[i];
                 maxAlphabet = (char)('A'+i);
-        } else if (count[i] == maxCount) {
+            } else if (count[i] == maxCount) {
                 maxAlphabet = '?';
             }
         }
