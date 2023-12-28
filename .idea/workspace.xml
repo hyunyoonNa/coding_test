@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03b1e87d-f7f6-428a-a7a3-d03e5ae31953" name="Changes" comment="백준 2744">
-      <change afterPath="$PROJECT_DIR$/src/com/fc/test/BJ_13223.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fc/test/Ant_10158.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fc/test/BJ_13223.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fc/test/BJ_13223.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,8 @@
       <workItem from="1701517383407" duration="12118000" />
       <workItem from="1701673605017" duration="2215000" />
       <workItem from="1701862175312" duration="3027000" />
-      <workItem from="1703077733002" duration="1935000" />
+      <workItem from="1703077733002" duration="2478000" />
+      <workItem from="1703766641942" duration="3015000" />
     </task>
     <task id="LOCAL-00001" summary="백준 2744 풀이">
       <option name="closed" value="true" />

@@ -5,27 +5,36 @@ import java.util.Scanner;
 public class BJ_13223 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String current =sc.next();
-        String drop =sc.next();
+        int W = sc.nextInt();
+        int H = sc.nextInt();
+        int P = sc.nextInt();
+        int Q = sc.nextInt();
+        int T = sc.nextInt();
 
-        String[] currentUnit= current.split(":");
-        int currentHour = Integer.parseInt(currentUnit[0]);
-        int currentMinute = Integer.parseInt(currentUnit[1]);
-        int currentSecond = Integer.parseInt(currentUnit[2]);
-        int currentSecondAmount =  currentHour*3600 +currentMinute*60 + currentSecond;
-        String[] dropUnit = drop.split(":");
-        int dropHour =  Integer.parseInt(dropUnit[0]);
-        int dropMinute =  Integer.parseInt(dropUnit[1]);
-        int dropSecond =  Integer.parseInt(dropUnit[2]);
-        int dropSecondAmount = dropHour*3600 + dropMinute*60  + dropSecond;
+        int timeX = T%(2 * W);
+        int currentX = P;
+        int deltaX=1;
+        while(timeX --> 0) {
+            if(currentX ==W) deltaX = -1;
+            else if(currentX ==0) deltaX =1;
+            currentX += deltaX;
+        }
 
-        int needSecondAmount = dropSecondAmount-currentSecondAmount;
-        if(needSecondAmount <= 0)
-            needSecondAmount += 24 *3600;
-        int needHour = needSecondAmount /3600;
-        int needMinute = (needSecondAmount % 3600) /60;
-        int needSecond =  needSecondAmount % 60;
-        System.out.printf("%02d:%02d:%02d", needHour, needMinute, needSecond);
+        int timeY = T%(2 * H);
+        int currentY = Q;
+        int deltaY=1;
+        while(timeY --> 0) {
+            if(currentY ==H) deltaY = -1;
+            else if(currentY ==0) deltaY =1;
+            currentY += deltaY;
+        }
 
+//        int currentX = (P+T) %(2 * W);
+//        int currentY = (Q+T) %(2 * H);
+//        if(currentX > W) currentX =2 * W - currentX;
+//        if(currentY > H) currentY =2 * H - currentY;
+
+
+        System.out.println(currentX +" " + currentY);
     }
 }
